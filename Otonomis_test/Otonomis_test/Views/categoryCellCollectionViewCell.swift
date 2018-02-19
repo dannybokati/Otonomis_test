@@ -17,6 +17,19 @@ class categoryCellCollectionViewCell: UICollectionViewCell {
         categoryImage.image = UIImage(named: category.imageTitle)
         categoryTitle.text = category.title
     }
-  
+    func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
+        return table.count
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
+        if let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "CollectionCell", for: indexPath) as? collectionCell {
+            let  = products[indexPath.row]
+            cell.updateViews(product: product)
+            return cell
+            
+        }else {
+            return collectionCell()
+        }
+    }
   
 }

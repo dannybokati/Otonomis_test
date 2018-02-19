@@ -12,6 +12,12 @@
 		A3AE6C31203AD2FF0066B29A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A3AE6C2F203AD2FF0066B29A /* Main.storyboard */; };
 		A3AE6C33203AD2FF0066B29A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A3AE6C32203AD2FF0066B29A /* Assets.xcassets */; };
 		A3AE6C36203AD2FF0066B29A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A3AE6C34203AD2FF0066B29A /* LaunchScreen.storyboard */; };
+		A3C59A53203ADCAB00BFE10B /* DataServices.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3C59A52203ADCAB00BFE10B /* DataServices.swift */; };
+		A3C59A57203AE14600BFE10B /* category.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3C59A56203AE14600BFE10B /* category.swift */; };
+		A3C59A5B203AE17E00BFE10B /* table.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3C59A5A203AE17E00BFE10B /* table.swift */; };
+		A3C59A5E203AE5C100BFE10B /* categoryCellCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3C59A5D203AE5C100BFE10B /* categoryCellCollectionViewCell.swift */; };
+		A3C59A60203AE5E900BFE10B /* tableCellTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3C59A5F203AE5E900BFE10B /* tableCellTableViewCell.swift */; };
+		A3C59A63203AE74A00BFE10B /* TableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3C59A62203AE74A00BFE10B /* TableViewController.swift */; };
 		FDB5D615C3667913DC3B9078 /* Pods_Otonomis_test.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 521B07AF4BAD7E1EC8559633 /* Pods_Otonomis_test.framework */; };
 /* End PBXBuildFile section */
 
@@ -25,6 +31,12 @@
 		A3AE6C32203AD2FF0066B29A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A3AE6C35203AD2FF0066B29A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		A3AE6C37203AD2FF0066B29A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A3C59A52203ADCAB00BFE10B /* DataServices.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataServices.swift; sourceTree = "<group>"; };
+		A3C59A56203AE14600BFE10B /* category.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = category.swift; sourceTree = "<group>"; };
+		A3C59A5A203AE17E00BFE10B /* table.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = table.swift; sourceTree = "<group>"; };
+		A3C59A5D203AE5C100BFE10B /* categoryCellCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = categoryCellCollectionViewCell.swift; sourceTree = "<group>"; };
+		A3C59A5F203AE5E900BFE10B /* tableCellTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = tableCellTableViewCell.swift; sourceTree = "<group>"; };
+		A3C59A62203AE74A00BFE10B /* TableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewController.swift; sourceTree = "<group>"; };
 		DB2A1A2773460F0DB372257F /* Pods-Otonomis_test.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Otonomis_test.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Otonomis_test/Pods-Otonomis_test.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -70,14 +82,52 @@
 		A3AE6C2A203AD2FF0066B29A /* Otonomis_test */ = {
 			isa = PBXGroup;
 			children = (
+				A3C59A61203AE71900BFE10B /* Controllers */,
+				A3C59A5C203AE59600BFE10B /* Views */,
+				A3C59A54203AE12900BFE10B /* Models */,
+				A3C59A51203ADC7A00BFE10B /* Services */,
 				A3AE6C2B203AD2FF0066B29A /* AppDelegate.swift */,
-				A3AE6C2D203AD2FF0066B29A /* ViewController.swift */,
 				A3AE6C2F203AD2FF0066B29A /* Main.storyboard */,
 				A3AE6C32203AD2FF0066B29A /* Assets.xcassets */,
 				A3AE6C34203AD2FF0066B29A /* LaunchScreen.storyboard */,
 				A3AE6C37203AD2FF0066B29A /* Info.plist */,
 			);
 			path = Otonomis_test;
+			sourceTree = "<group>";
+		};
+		A3C59A51203ADC7A00BFE10B /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				A3C59A52203ADCAB00BFE10B /* DataServices.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		A3C59A54203AE12900BFE10B /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				A3C59A56203AE14600BFE10B /* category.swift */,
+				A3C59A5A203AE17E00BFE10B /* table.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		A3C59A5C203AE59600BFE10B /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				A3C59A5D203AE5C100BFE10B /* categoryCellCollectionViewCell.swift */,
+				A3C59A5F203AE5E900BFE10B /* tableCellTableViewCell.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		A3C59A61203AE71900BFE10B /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				A3AE6C2D203AD2FF0066B29A /* ViewController.swift */,
+				A3C59A62203AE74A00BFE10B /* TableViewController.swift */,
+			);
+			path = Controllers;
 			sourceTree = "<group>";
 		};
 		C53450D096FEAE00AB774592 /* Frameworks */ = {
@@ -211,8 +261,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A3C59A5B203AE17E00BFE10B /* table.swift in Sources */,
+				A3C59A53203ADCAB00BFE10B /* DataServices.swift in Sources */,
 				A3AE6C2E203AD2FF0066B29A /* ViewController.swift in Sources */,
+				A3C59A63203AE74A00BFE10B /* TableViewController.swift in Sources */,
 				A3AE6C2C203AD2FF0066B29A /* AppDelegate.swift in Sources */,
+				A3C59A5E203AE5C100BFE10B /* categoryCellCollectionViewCell.swift in Sources */,
+				A3C59A57203AE14600BFE10B /* category.swift in Sources */,
+				A3C59A60203AE5E900BFE10B /* tableCellTableViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
